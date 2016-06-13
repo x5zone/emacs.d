@@ -27,12 +27,6 @@
                        "/bin:"
                        (getenv "GOBIN")))
 
-;; go语言的自动补全设置
-;; 需要预先安装gocode到$PATH中：github.com/nsf/gocode
-(require 'go-mode-load)
-;;(require 'go-complete)
-(require 'go-autocomplete)
-
 ;; ======================= auto-complete-config ============
 ;; auto-completion是一个代码自动补全工具
 ;;(require 'auto-complete)
@@ -43,6 +37,13 @@
 ;;(global-auto-complete-mode t)
 ;;(define-key ac-completing-map (kbd "C-n") 'ac-next)
 ;;(define-key ac-completing-map (kbd "C-p") 'ac-previous)
+
+;; go语言的自动补全设置
+;; 需要预先安装gocode到$PATH中：github.com/nsf/gocode
+(require 'go-mode-load)
+;;(require 'go-complete)
+(require 'go-autocomplete)
+
 
 ;; Info
 (load "info")
