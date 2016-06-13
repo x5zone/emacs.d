@@ -40,6 +40,9 @@
 
 ;; go语言的自动补全设置
 ;; 需要预先安装gocode到$PATH中：github.com/nsf/gocode
+;; gocode set propose-builtins true
+;; gocode set lib-path "/your/pkg/path:GOPATH/pkg/path"
+;; gocode -s
 (require 'go-mode-load)
 ;;(require 'go-complete)
 (require 'go-autocomplete)
